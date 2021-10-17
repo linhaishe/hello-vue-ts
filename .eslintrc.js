@@ -5,5 +5,6 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module', //指定源代码存在的位置，script | module，默认为script。
   },
-  rules: { semi: 1 },
-}
+  //"@typescript-eslint/no-inferrable-types": "off" // 关闭类型推断
+  rules: { semi: 1, '@typescript-eslint/no-inferrable-types': 'off' },
+};
