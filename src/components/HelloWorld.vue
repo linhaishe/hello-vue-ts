@@ -112,7 +112,7 @@ export default class HelloWorld extends Vue {
   }
 
   addAge(id: number): void {
-    const user: IUser = this.userList.find((user) => user.id === id);
+    const user: IUser = this.userList.find((user) => user.id === id)!;
     user.userAge++;
   }
 
